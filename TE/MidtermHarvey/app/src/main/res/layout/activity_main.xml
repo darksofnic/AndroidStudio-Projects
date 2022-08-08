@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:background="#FFF"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/question_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="30dp"
+        android:text="Questions "
+
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="154dp" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="143dp"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="210dp"
+        android:layout_marginEnd="103dp"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="154dp">
+
+        <RadioButton
+            android:id="@+id/true_rb"
+            android:layout_width="87dp"
+            android:layout_height="wrap_content"
+            android:text="False"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="175dp" />
+        <!-- android:checked="true" -->
+
+        <RadioButton
+            android:id="@+id/false_rb"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:text="True"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="271dp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/nextBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="235dp"
+        android:layout_marginBottom="149dp"
+        android:text="@string/mNext" />
+
+    <Button
+        android:id="@+id/backBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/radioGroup"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-64dp"
+        android:layout_marginBottom="150dp"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/submitBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="79dp"
+        android:text="Submit" />
+
+</RelativeLayout>
